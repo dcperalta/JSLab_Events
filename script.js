@@ -54,3 +54,10 @@ function handleFocus() {
     document.getElementById('username').style.background = 'lightyellow';
     document.getElementById('focusOutput').innerHTML = 'You are in focus.';
 }
+
+// Blur Event
+// Changes background colour of input box when not focused (or writing) in it
+function handleBlur() {
+    document.getElementById('username').style.background = 'pink';
+    document.getElementById('focusOutput').innerHTML = 'You are out of focus.';
+}
