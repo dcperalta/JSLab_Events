@@ -40,3 +40,10 @@ document.getElementById("myForm").addEventListener('submit', function (event) {
     event.preventDefault(); // Form is not submitted
     formOutput.innerHTML = `User: ${firstName.value} ${lastName.value}, Status: ${status.value}`; 
 });
+
+// Listens for changes in the status and changes the text
+const status = document.getElementById('status');
+status.addEventListener('change', function () {
+    const formOutput = document.getElementById('formOutput');
+    formOutput.innerHTML = `Status changed to: ${this.value}`; 
+});
