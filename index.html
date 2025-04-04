@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Events</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Welcome!<h1>
+    <h2>This is an HTML that shows different JS Events</h2>
+    
+    
+    <h4>Mouse Event #1</h4>
+    <p id="demo">Click the button below for a surprise.</p>
+    <button id="btn1">Click Me!</button>
+    <br>
+
+    <h4>Mouse Event #2</h4>
+    <button 
+        onmouseenter="this.style.backgroundColor = 'pink';"
+        onmouseleave="this.style.backgroundColor = 'transparent';"
+        class="hoverButton"> 
+            Hover over me (Inline)
+    </button>
+
+    <button id="hoverButton" class="hoverButton">
+        Hover over me (Listener)
+    </button>
+    <br>
+
+    <h4>Keyboard Event</h4>
+    <p>Press any key on the keyboard:</p>
+    <input type="text" id="keyInput" placeholder="Type something...">
+    <p id="keyOutput"></p>
+    <br>
+
+    <h4>Form Event</h4>
+    <form id="myForm">
+        <label for="firstName">First name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="Enter your first name">
+    
+        <label for="lastName">Last name:</label> 
+        <input type="text" id="lastName" name="lastName" placeholder="Enter your last name">
+    
+        <label for="status">Status:</label>
+        <select id="status" name="status">
+            <option value="active">Active</option>
+            <option value="inactive">Inactive</option>
+            <option value="pending">Pending</option>
+        </select> <br> <br>
+    
+        <input type="submit" value="Submit">
+    </form>
+    <p id="formOutput"></p>
+    <br>    
+
+    <h4>Focus Example</h4>
+    <label for="username">Username:</label>
+    <input type="text" id="username" onfocus="handleFocus();" onblur="handleBlur();">
+    <p id="focusOutput"></p>
+    <br>
+    
+
+    <h4>Event Delegation</h4> 
+    <ul id="myList">
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <p id="listOutput"></p>
+    <br>
+
+    <script src="script.js"></script>
+</body>
+</html>
