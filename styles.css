@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+    background-color: hsl(150, 60%, 82%);
+    color: #967039;
+}
+
+section {
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+h4 {
+    color: #4a4a4a;
+    font-style: italic;
+    font-weight: bolder;
+    text-decoration: underline;
+    font-size: 1.5em;
+}
+
+.hoverButton {
+    padding: 10px 20px;
+    margin: 10px;
+    border: 1px dotted #000;
+    font-size: 16px;
+}
