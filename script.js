@@ -10,3 +10,15 @@ document.getElementById("btn1").addEventListener("click", function () {
     clicked = 0;
   } 
 });
+
+// Mouse Event #2
+// Change background colour when mouse hovers over button
+const hoverButton = document.getElementById("hoverButton");
+
+hoverButton.addEventListener("mouseenter", function () {
+    this.style.backgroundColor = "lightblue";
+});
+
+hoverButton.addEventListener("mouseleave", function () {
+    this.style.backgroundColor = "transparent";
+});
