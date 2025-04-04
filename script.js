@@ -61,3 +61,11 @@ function handleBlur() {
     document.getElementById('username').style.background = 'pink';
     document.getElementById('focusOutput').innerHTML = 'You are out of focus.';
 }
+
+// Event Delegation
+// Listens for clicks on the list items and displays a message
+document.getElementById("myList").addEventListener("click", function(event) {
+    if (event.target.tagName === "LI") {
+        document.getElementById("listOutput").innerHTML = "You clicked on: " + event.target.innerHTML;
+    }
+});
