@@ -47,3 +47,10 @@ status.addEventListener('change', function () {
     const formOutput = document.getElementById('formOutput');
     formOutput.innerHTML = `Status changed to: ${this.value}`; 
 });
+
+// Focus Event
+// Changes background colour of input box when focused (or writing) in it 
+function handleFocus() {
+    document.getElementById('username').style.background = 'lightyellow';
+    document.getElementById('focusOutput').innerHTML = 'You are in focus.';
+}
