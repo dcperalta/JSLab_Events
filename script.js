@@ -22,3 +22,9 @@ hoverButton.addEventListener("mouseenter", function () {
 hoverButton.addEventListener("mouseleave", function () {
     this.style.backgroundColor = "transparent";
 });
+
+// Keyboard Event
+// Listen for the keys being pressed and displays them
+document.getElementById("keyInput").addEventListener("keydown", function(event) {
+    document.getElementById("keyOutput").innerHTML = "You entered key: " + event.key;
+});
